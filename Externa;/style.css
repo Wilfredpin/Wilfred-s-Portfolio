@@ -1,0 +1,528 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Jost, sans-serif;
+    box-sizing: border-box;
+}
+
+.hamburger {
+    display: none;
+}
+
+body {
+    background-color: #f8fafc;
+}
+
+/* Universal codes */
+h2 {
+    margin-bottom: 20px;
+    font-size: 37px;
+    color: #eeeeee;
+    text-align: left;
+}
+
+h3 {
+    color: #00c6b7;
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+p{
+    text-align: left;
+    font-size: 18px;
+    color: #eeeeee;
+    margin-bottom: 100px;
+}
+
+/* Universal codes ends here */
+
+
+
+header {
+    height: 60px;
+    width: 100%;
+    padding: 0px 80px;
+    background-color: #f8fafc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    margin-bottom: 60px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
+    z-index: 1;
+}
+
+.logo {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo h1 {
+    color: #00c6b7;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+span {
+    color: rgb(0, 199, 182);
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    margin: 0 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #313133;
+    border-radius: 50px;
+    transition: 0.2s;
+    padding: 10px 25px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ nav ul li a:hover {
+    color: #00c6b7;
+ }
+
+ nav ul li a:active {
+    color: #63fff2
+ }
+
+ .nav-icon {
+    display: flex;
+    margin-right: 40px;
+    align-items: center;
+ }
+
+ .nav-icon p {
+    color: #1b1c1f;
+ }
+
+ .nav-icon i{
+    margin-left: 20px;
+    padding: 10px;
+    color: #1b1c1f;
+    transition: 0.2s ease;
+ }
+
+
+ .nav-icon i:hover {
+    color: #00c6b7;
+ }
+
+ .nav-icon i:active{
+    color: #63fff2;
+ }
+
+ 
+
+ @media screen and (max-width: 1200px) {
+    header {
+        padding: 0 30px;
+    }
+
+    nav ul li a {
+        padding: 8px 16px;
+        border-radius: 10px;
+        align-items: center;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    header {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    h2,
+    p {
+        text-align: center;
+    }
+    .hamburger {
+        cursor: pointer;
+        display: block;
+    }
+    
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: #00c6b7;
+        margin: 6px 0;
+        border-radius: 10px;
+    } 
+    nav {
+        height: 0;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #11161c;
+        transition: 0.2s;
+        overflow: hidden;
+    } 
+    nav.active {
+        height: 450px;
+    }
+
+    nav ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    nav.active ul{
+        opacity: 1;
+    }
+    nav ul li a {
+        margin-bottom: 12px;
+        padding: 8px 60px;
+        color: #eeeeee;
+    }
+}
+ .skills,
+ .xp,
+ .about,
+ .contact {
+    margin-top: 30px;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 150px;
+ }
+
+/* Landing Start Here */
+
+ .img {
+	background: url("man-2585752_1920.jpg") no-repeat;
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: cover;
+	position: relative;
+}
+.img::before {
+	content: "";
+	position: absolute;
+	height:100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.6);
+}
+.center {
+	position: absolute;
+	top: 46%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	padding: 0 20px;
+	text-align: center;
+}
+.center .title {
+	color: #fff;
+	font-size: 55px;
+	font-weight: 600;
+}
+.center .sub_title {
+	color: #fff;
+	font-size: 52px;
+	font-weight: 600;
+}
+
+.center p {
+    margin-bottom: 30px;
+}
+
+.center .resume {
+    text-decoration: none;
+    color: #eeeeee;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    background: linear-gradient(#00c6b7, #02ffea);
+    transition: all 0.3s ;
+    
+}
+
+.center .resume:hover {
+    background: #313133;
+}
+
+.Job {
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .img {
+        height: 80vh;
+    }
+}
+
+ /* SKILLS SECTION START HERE */
+
+#skills {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    margin-bottom: 150px;
+}
+
+#skills p,
+#skills h2 {
+    color: #11161c;
+}
+
+.contain {
+    margin-bottom: 200px;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+}
+
+.box {
+    margin-top: 20px;
+}
+
+.box p {
+    margin: 10px 0;
+    margin-top: 30px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress_bar {
+    width: 100%;
+    height: 15px;
+    background-color: grey;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+}
+
+.progress.mang {
+    width: 100%;
+    background-color: #00c6b7;
+}
+.progress.colla {
+    width: 100%;
+    background-color: #00c6b7;
+}
+.progress.proj {
+    width: 100%;
+    background-color: #00c6b7;
+}
+.progress.advs {
+    width: 100%;
+    background-color: #00c6b7;
+}
+
+
+@media only screen and (min-width:550px) {
+    .contain {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about span {
+        font-size: 14px;
+    }
+}
+
+/* Skills Ends Here */
+
+/* Portfolio Section */ 
+
+.xp p,
+.xp h2 {
+    color: #11161c;
+}
+
+.xp-card {
+    display: grid;
+    margin-top: 30px;
+    width: 100%;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.xp-card i {
+    font-size: 50px;
+}
+
+.xp-card .xp-card-1,
+.xp-card .xp-card-2,
+.xp-card .xp-card-3,
+.xp-card .xp-card-4,
+.xp-card .xp-card-5,
+.xp-card .xp-card-6 {
+    padding: 30px 20px;
+    background-color: #1b1c1f;
+    color: #eeeeee;
+    border-radius: 4px;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+
+
+.xp-card .xp-card-1 h6,
+.xp-card .xp-card-2 h6,
+.xp-card .xp-card-3 h6,
+.xp-card .xp-card-4 h6,
+.xp-card .xp-card-5 h6,
+.xp-card .xp-card-6 h6 {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.xp-card .xp-card-1:hover,
+.xp-card .xp-card-2:hover,
+.xp-card .xp-card-3:hover,
+.xp-card .xp-card-4:hover,
+.xp-card .xp-card-5:hover,
+.xp-card .xp-card-6:hover {
+    transform: translateY(-10px);
+    color: #202020;
+}
+
+.xp-card .xp-card-1:hover {
+    background-color: #fdcedf;
+}
+
+.xp-card .xp-card-2:hover {
+    background-color: #fff89a;
+}
+
+.xp-card .xp-card-3:hover {
+    background-color: #e8d5fd;
+}
+
+.xp-card .xp-card-6:hover {
+    background-color: #beadfa;
+}
+
+.xp-card .xp-card-5:hover {
+    background-color: #ccf6c8;
+}
+
+.xp-card .xp-card-4:hover {
+    background-color: #b4e4ff;
+}
+
+
+
+/* About section Starts here */
+
+
+
+.about {
+    width: 85%;
+    margin: 80px auto;
+
+}
+
+.about h2 {
+    margin-bottom: 10px;
+    color: #1b1c1f;
+}
+
+.about p {
+    color: #1b1c1f;
+    margin: 0;
+    line-height: 30px;
+}
+
+
+
+
+.about image {
+    width: 100%;
+}
+
+
+/* Contact Section starts here */
+.point {
+    display: grid;
+    width: 100%;
+    margin-top: 60px;
+    grid-template-columns:repeat(auto-fit, minmax(270px, 1fr));
+    gap: 20px;
+}
+
+.bullet {
+    display: flex;
+    background-color: #313133;
+    padding: 10px 20px;
+    align-items: center;
+    transition: 0.2s;
+    text-align: center;
+}
+
+.bullet:hover {
+    transform: translateY(-5px);
+    box-shadow: 1px 2px 3px #525252;
+}
+
+.point i {
+    color: #00c6b7;
+    font-size: 30px;
+    transition: all 0.2s;
+}
+
+.point h6 {
+    font-weight: 500;
+    color: #f8fafc;
+    margin-left: 12px;
+    font-size: 15px;
+}
+
+
+/* Contact section Ends here */
+
+/* Footer Starts Here */
+
+.contact p,
+.contact h2 {
+    color: #11161c;
+}
+
+hr {
+    width: 100%;
+    color: #00c6b7;
+}
+ 
+footer h6 {
+    margin: 20px 0;
+    color: #11161c;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+}

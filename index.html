@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wilfred Design</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/723403ae5d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="Javascript.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index2.html">Projects</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index3.html">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="socials">
+        <a href="https://www.figma.com/design/FofniYuptJMtaoqOmO7m8r/Work-Space?t=YPNuJhjL0ncxmwtl-1">Figma</a>
+        <a href="">LinkedIn</a>
+        <a href="" onclick="copyEmail()" class="Mail">Copy Mail</a>
+      </div>
+    </header>
+    
+
+    <div class="hero">
+      <div class="heading1">
+        <h1>Hey I'm</h1>
+        <img src="pexels-ron-lach-9895332.jpg" alt="" />
+        <h1>Wilfred</h1>
+      </div>
+      <div class="heading2">
+        <h1>Web designer keen on <br />Front-End Development & interactions</h1>
+      </div>
+
+      <div class="iconed">
+        <p>View Portfolio</p>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </div>
+
+    <div class="craft">
+      <h3>CRAFT</h3>
+      <p class="span">Michael Oscar</p>
+      <h2>We are all Addicts Now</h2>
+
+      <div class="Holder">
+        <div class="text-section">
+          <div class="buttons">
+            <div class="btn">Case Study</div>
+            <div class="btn">Web3</div>
+            <div class="btn">Community</div>
+            <div class="btn">Prototyping</div>
+          </div>
+          <a href="index2.html" class="btn black">View Work</a>
+        </div>
+
+        <div class="phone-mockup">
+          <img src="Mockup.png" alt="Phone Mockup" />
+        </div>
+      </div>
+    </div>
+
+    <div class="card-preview"></div>
+
+    <div class="moment">
+      <div class="marquees">
+        <div class="marquees-inner">
+          <div class="marquees-part">
+            Let Work Together
+            <div class="arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <div class="marquees-part">
+            Let Work Together
+            <div class="arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <div class="marquees-part">
+            Let Work Together
+            <div class="arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <div class="marquees-part">
+            Let Work Together
+            <div class="arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <div class="marquees-part">
+            Let Work Together
+            <div class="arrow">→</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="CTA">
+      <h1>Interested in <br />Working Together?</h1>
+      <p>contact me</p>
+      <a href="mailto:Wilfredlovez13@gmail.com?subject=Hello">Wilfredlovez13@gmail.com</a>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-left">
+          <p>Designed and Developed by <br>Unokesan Wilfred</p>
+        </div>
+
+        <div class="footer-middle">
+          <a href="https://www.figma.com/design/FofniYuptJMtaoqOmO7m8r/Work-Space?t=YPNuJhjL0ncxmwtl-1">Figma</a>
+          <a href="" class="INK">LinkedIn</a>
+        </div>
+
+        <div class="footer-right">
+          <p>© 2024 Wilfred Unokesan</p>
+          <a href="index.html">Back to top</a>
+      </div>
+    </footer>
+
+    <script>
+      let currentScroll = 0;
+      let isScrollingDown = true;
+      let arrows = document.querySelectorAll(".arrow");
+
+      let tween = gsap
+        .to(".marquees-part", {
+          xPercent: -100,
+          repeat: -1,
+          duration: 5,
+          ease: "linear",
+        })
+        .totalProgress(0.5);
+
+      gsap.set(".marquees-inner", { xPercent: -50 });
+
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > currentScroll) {
+          isScrollingDown = true;
+        } else {
+          isScrollingDown = false;
+        }
+
+        gsap.to(tween, {
+          timeScale: isScrollingDown ? 1 : -1,
+        });
+
+        arrows.forEach((arrow) => {
+          if (isScrollingDown) {
+            arrow.classList.remove("active");
+          } else {
+            arrow.classList.add("active");
+          }
+        });
+
+        currentScroll = window.pageYOffset;
+      });
+
+      hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function () {
+            navBar = document.querySelector("nav");
+            navBar.classList.toggle("active");
+        };
+    </script>
+  </body>
+</html>
