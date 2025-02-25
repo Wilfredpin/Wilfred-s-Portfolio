@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Clash Display", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .hamburger {
@@ -42,6 +43,7 @@
   font-display: swap;
   font-style: normal;
 }
+
 @font-face {
   font-family: "ClashDisplay-Medium";
   src: url("../Wilfred/Fonts/WEB/fonts/ClashDisplay-Medium.woff2")
