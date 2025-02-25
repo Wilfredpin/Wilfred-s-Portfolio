@@ -2,91 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Clash Display", sans-serif;
   font-family: "Josefin Sans", sans-serif;
 }
 
 .hamburger {
   display: none;
-}
-
-@font-face {
-  font-family: "ClashDisplay-Extralight";
-  src: url("../Wilfred/Fonts/WEB/fonts/ClashDisplay-Bold.woff2") format("woff2"),
-    url("../Wilfred/Fonts/WEB/fonts/ClashDisplay-Bold.woff") format("woff"),
-    url("../Wilfred/Fonts/WEB/fonts/ClashDisplay-Extralight.ttf")
-      format("truetype");
-  font-weight: 200;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "ClashDisplay-Light";
-  src: url("../Wilfred/Fonts/WEB/fonts/ClashDisplay-Light.woff2")
-      format("woff2"),
-    url("../Wilfred/Fonts/WEB/fonts/ClashDisplay-Light.woff") format("woff"),
-    url("../Wilfred/Fonts/WEB/fonts/ClashDisplay-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "ClashDisplay-Regular";
-  src: url("../Wilfred/Fonts/WEB/fonts/ClashDisplay-Regular.woff2")
-      format("woff2"),
-    url("../Wilfred/Fonts/WEB/fonts/ClashDisplay-Regular.woff") format("woff"),
-    url("../Wilfred/Fonts/WEB/fonts/ClashDisplay-Regular.ttf")
-      format("truetype");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "ClashDisplay-Medium";
-  src: url("../Wilfred/Fonts/WEB/fonts/ClashDisplay-Medium.woff2")
-      format("woff2"),
-    url("../Wilfred/Fonts/WEB/fonts/ClashDisplay-Medium.woff") format("woff"),
-    url("../Wilfred/Fonts/WEB/fonts/ClashDisplay-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "ClashDisplay-Semibold";
-  src: url("../Wilfred/Fonts/WEB/fonts/ClashDisplay-Semibold.woff2")
-      format("woff2"),
-    url("../Wilfred/Fonts/WEB/fonts/ClashDisplay-Semibold.woff") format("woff"),
-    url("../Wilfred/Fonts/WEB/fonts/ClashDisplay-Semibold.ttf")
-      format("truetype");
-  font-weight: 600;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "ClashDisplay-Bold";
-  src: url("../Wilfred/Fonts/WEB/fonts/ClashDisplay-Bold.woff2") format("woff2"),
-    url("../Wilfred/Fonts/WEB/fonts/ClashDisplay-Bold.woff") format("woff"),
-    url("../Wilfred/Fonts/WEB/fonts/ClashDisplay-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "ClashDisplay-Variable";
-  src: url("../Wilfred/Fonts/WEB/fonts/ClashDisplay-Variable.woff2")
-      format("woff2"),
-    url("../Wilfred/Fonts/WEB/fonts/ClashDisplay-Variable.woff") format("woff"),
-    url("../Wilfred/Fonts/WEB/fonts/ClashDisplay-Variable.ttf")
-      format("truetype");
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
 }
 
 header {
@@ -110,7 +30,7 @@ nav ul li a {
   color: #000;
   padding: 10px 20px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 800;
   transition: ease 0.3s;
   margin-left: 20px;
   border-radius: 20px;
@@ -176,6 +96,7 @@ nav ul li a:hover {
 .hero .heading2 {
   font-size: 40px;
   font-weight: 600;
+  line-height: 100px;
 }
 
 .hero img {
@@ -704,6 +625,7 @@ footer {
 
   .hero .heading2 {
     font-size: 25px;
+    line-height: 60px;
   }
 
   .hero img {
