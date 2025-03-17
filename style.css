@@ -18,6 +18,10 @@ header {
   height: 80px;
 }
 
+p {
+  line-height: 30px;
+}
+
 nav ul {
   display: flex;
   align-items: center;
@@ -95,8 +99,8 @@ nav ul li a:hover {
 
 .hero .heading2 {
   font-size: 40px;
-  font-weight: 600;
   line-height: 100px;
+  font-weight: 600;
 }
 
 .hero img {
@@ -625,6 +629,7 @@ footer {
 
   .hero .heading2 {
     font-size: 25px;
+    line-height: 45px;
   }
 
   .hero img {
@@ -656,9 +661,6 @@ footer {
   .arrow {
     height: 22.5px;
     width: 30px;
-  }
-  p {
-    line-height: 25px;
   }
 
   .CTA h1 {
